@@ -1,0 +1,12 @@
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARLogic\bin\Debug\eSARLogic.dll
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARLogic\bin\Debug\eSARLogic.pdb
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARLogic\bin\Debug\eSARBDO.dll
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARLogic\bin\Debug\eSARDAL.dll
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARLogic\bin\Debug\EntityFramework.dll
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARLogic\bin\Debug\eSARBDO.pdb
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARLogic\bin\Debug\eSARDAL.pdb
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARLogic\bin\Debug\EntityFramework.xml
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARLogic\obj\Debug\eSARLogic.csprojResolveAssemblyReference.cache
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARLogic\obj\Debug\eSARLogic.dll
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARLogic\obj\Debug\eSARLogic.pdb
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARLogic\bin\Debug\App.Config

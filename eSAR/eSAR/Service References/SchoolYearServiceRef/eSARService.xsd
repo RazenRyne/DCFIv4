@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/eSARService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/eSARService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="SchoolYear">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CurrentSY" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SY" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SchoolYear" nillable="true" type="tns:SchoolYear" />
+  <xs:complexType name="ArrayOfSchoolYear">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SchoolYear" nillable="true" type="tns:SchoolYear" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSchoolYear" nillable="true" type="tns:ArrayOfSchoolYear" />
+</xs:schema>

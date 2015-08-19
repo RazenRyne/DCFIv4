@@ -1,0 +1,17 @@
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARService\bin\Debug\eSARService.dll.config
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARService\bin\Debug\eSARService.dll
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARService\bin\Debug\eSARService.pdb
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARService\bin\Debug\eSARBDO.dll
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARService\bin\Debug\eSARLogic.dll
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARService\bin\Debug\eSARDAL.dll
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARService\bin\Debug\EntityFramework.dll
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARService\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARService\bin\Debug\eSARBDO.pdb
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARService\bin\Debug\eSARLogic.pdb
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARService\bin\Debug\eSARDAL.pdb
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARService\bin\Debug\EntityFramework.xml
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARService\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARService\obj\Debug\eSARService.csprojResolveAssemblyReference.cache
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARService\obj\Debug\eSARService.dll
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARService\obj\Debug\eSARService.pdb
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARService\bin\Debug\App.Config

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3f72fd36-8f84-4c1b-b195-065209010048" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/eSARService/UserService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="2ed97bac-a942-41af-a4bc-d1ba9d52f9df" SourceId="1" SourceUrl="http://localhost:8733/eSARService/UserService/?xsd=xsd2" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="7b4b4d68-1521-4a42-a94a-df3ff4526078" SourceId="1" SourceUrl="http://localhost:8733/eSARService/UserService/?disco" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="b8a42f3a-d5e0-4a87-a405-4a5fb12e3714" SourceId="1" SourceUrl="http://localhost:8733/eSARService/UserService/?xsd=xsd0" />
+    <MetadataFile FileName="UserService.wsdl" MetadataType="Wsdl" ID="899ca8d6-93e8-4fa3-aa75-9a7be44e0cd6" SourceId="1" SourceUrl="http://localhost:8733/eSARService/UserService/?wsdl" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="b282d4cf-4a09-472a-94fc-bbe67422d098" SourceId="1" SourceUrl="http://localhost:8733/eSARService/UserService/?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

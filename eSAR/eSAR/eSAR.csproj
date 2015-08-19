@@ -1,0 +1,1062 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{181F3F70-F42D-4CA8-B372-6B9064D13364}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>eSAR</RootNamespace>
+    <AssemblyName>eSAR</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EQATEC.Analytics.Monitor, Version=3.2.1.0, Culture=neutral, PublicKeyToken=213c7c68adb58a17, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadDock, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Maths, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Zip, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikData, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikExport, Version=2015.1.331.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admission and Registration\frmStudentDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admission and Registration\frmStudentDetails.Designer.cs">
+      <DependentUpon>frmStudentDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admission and Registration\frmStudentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admission and Registration\frmStudentList.Designer.cs">
+      <DependentUpon>frmStudentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\frmLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\frmLogIn.Designer.cs">
+      <DependentUpon>frmLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Billing and Payment\ManageReceipt\RadForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Billing and Payment\ManageReceipt\RadForm1.Designer.cs">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Billing and Payment\ManageReceipt\RadForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Billing and Payment\ManageReceipt\RadForm2.Designer.cs">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Billing and Payment\Payment\RadForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Billing and Payment\Payment\RadForm1.Designer.cs">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Billing and Payment\Payment\RadForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Billing and Payment\Payment\RadForm2.Designer.cs">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Billing and Payment\PrintReceipt\RadForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Billing and Payment\PrintReceipt\RadForm1.Designer.cs">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Billing and Payment\PrintReceipt\RadForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Billing and Payment\PrintReceipt\RadForm2.Designer.cs">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Billing and Payment\TransactionReport\RadForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Billing and Payment\TransactionReport\RadForm1.Designer.cs">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Billing and Payment\TransactionReport\RadForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Billing and Payment\TransactionReport\RadForm2.Designer.cs">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Course Related Resources\ManageGradeLevelSection\ManageGradeLevelSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Course Related Resources\ManageGradeLevelSection\ManageGradeLevelSection.Designer.cs">
+      <DependentUpon>ManageGradeLevelSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Course Related Resources\ManageGradeLevelSection\RadForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Course Related Resources\ManageGradeLevelSection\RadForm2.Designer.cs">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Course Related Resources\ManageSchedule\RadForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Course Related Resources\ManageSchedule\RadForm1.Designer.cs">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Course Related Resources\ManageSchedule\RadForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Course Related Resources\ManageSchedule\RadForm2.Designer.cs">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Course Related Resources\ManageSubject\frmManageSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Course Related Resources\ManageSubject\frmManageSubject.Designer.cs">
+      <DependentUpon>frmManageSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Course Related Resources\ManageSubject\frmLearningAreas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Course Related Resources\ManageSubject\frmLearningAreas.Designer.cs">
+      <DependentUpon>frmLearningAreas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Course Related Resources\ManageTeachers\frmTeacherDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Course Related Resources\ManageTeachers\frmTeacherDetails.Designer.cs">
+      <DependentUpon>frmTeacherDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Course Related Resources\ManageTeachers\frmTeacherList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Course Related Resources\ManageTeachers\frmTeacherList.Designer.cs">
+      <DependentUpon>frmTeacherList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quarterly Grading\Grading\RadForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quarterly Grading\Grading\RadForm1.Designer.cs">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quarterly Grading\Grading\RadForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quarterly Grading\Grading\RadForm2.Designer.cs">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quarterly Grading\PaymentRecord\RadForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quarterly Grading\PaymentRecord\RadForm1.Designer.cs">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quarterly Grading\PaymentRecord\RadForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quarterly Grading\PaymentRecord\RadForm2.Designer.cs">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\GenerateScheduleTeacherStudentClassroom\RadForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\GenerateScheduleTeacherStudentClassroom\RadForm1.Designer.cs">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\GenerateScheduleTeacherStudentClassroom\RadForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\GenerateScheduleTeacherStudentClassroom\RadForm2.Designer.cs">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\GenerateStudentListReport\RadForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\GenerateStudentListReport\RadForm1.Designer.cs">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\GenerateStudentListReport\RadForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\GenerateStudentListReport\RadForm2.Designer.cs">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\GenerateStudentPermanentRecord\RadForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\GenerateStudentPermanentRecord\RadForm1.Designer.cs">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\GenerateStudentPermanentRecord\RadForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\GenerateStudentPermanentRecord\RadForm2.Designer.cs">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\GenerateStudentStatementofAccount\RadForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\GenerateStudentStatementofAccount\RadForm1.Designer.cs">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\GenerateStudentStatementofAccount\RadForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\GenerateStudentStatementofAccount\RadForm2.Designer.cs">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\GenerateTeacherListReport\RadForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\GenerateTeacherListReport\RadForm1.Designer.cs">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\GenerateTeacherListReport\RadForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\GenerateTeacherListReport\RadForm2.Designer.cs">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scheduling\ScheduleReport\RadForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scheduling\ScheduleReport\RadForm1.Designer.cs">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scheduling\ScheduleReport\RadForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scheduling\ScheduleReport\RadForm2.Designer.cs">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scheduling\Scheduling\RadForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scheduling\Scheduling\RadForm1.Designer.cs">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scheduling\Scheduling\RadForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scheduling\Scheduling\RadForm2.Designer.cs">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BuildingServiceRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CurriculumServiceRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\GradeLevelServiceRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\LearningAreaServiceRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RoomServiceRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ScholarshipServiceRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SchoolYearServiceRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\StudentFeeServiceRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SubjectServiceRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\TimeslotServiceRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\ManageCurriculum\frmCurriculumDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\ManageCurriculum\frmCurriculumDetails.designer.cs">
+      <DependentUpon>frmCurriculumDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\ManageCurriculum\frmManageCurriculum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\ManageCurriculum\frmManageCurriculum.designer.cs">
+      <DependentUpon>frmManageCurriculum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\ManageCurriculum\SubjectsDetails.cs" />
+    <Compile Include="Settings\ManageScholarship\frmScholarshipDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\ManageScholarship\frmScholarshipDetails.Designer.cs">
+      <DependentUpon>frmScholarshipDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\ManageScholarship\frmScholarshipList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\ManageScholarship\frmScholarshipList.Designer.cs">
+      <DependentUpon>frmScholarshipList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\ManageScholarship\RadForm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\ManageScholarship\RadForm3.Designer.cs">
+      <DependentUpon>RadForm3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\ManageStudentFees\StudentFeeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\ManageStudentFees\StudentFeeList.Designer.cs">
+      <DependentUpon>StudentFeeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\ManageStudentFees\frmManageStudentFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\ManageStudentFees\frmManageStudentFee.Designer.cs">
+      <DependentUpon>frmManageStudentFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\ManageSY\frmSYList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\ManageSY\frmSYList.Designer.cs">
+      <DependentUpon>frmSYList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\ManageTimeSlot\frmTimeSlotDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\ManageTimeSlot\frmTimeSlotDetails.Designer.cs">
+      <DependentUpon>frmTimeSlotDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\ManageTimeSlot\frmTimeSlotList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\ManageTimeSlot\frmTimeSlotList.Designer.cs">
+      <DependentUpon>frmTimeSlotList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\ManageTraitsbyLevel\ManageTraits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\ManageTraitsbyLevel\ManageTraits.Designer.cs">
+      <DependentUpon>ManageTraits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\ManageTraitsbyLevel\TraitsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\ManageTraitsbyLevel\TraitsList.Designer.cs">
+      <DependentUpon>TraitsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility Classes\GlobalClass.cs" />
+    <Compile Include="Utility Classes\RegexUtilities.cs" />
+    <Compile Include="Service References\StudentServiceRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\TeacherServiceRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UserServiceRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\ManageBuilding\frmBuildingDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\ManageBuilding\frmBuildingDetails.Designer.cs">
+      <DependentUpon>frmBuildingDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\ManageBuilding\frmBuildingList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\ManageBuilding\frmBuildingList.Designer.cs">
+      <DependentUpon>frmBuildingList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\ManageUser\frmUserDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\ManageUser\frmUserDetails.Designer.cs">
+      <DependentUpon>frmUserDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\ManageUser\frmUserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\ManageUser\frmUserList.Designer.cs">
+      <DependentUpon>frmUserList.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admission and Registration\frmStudentDetails.resx">
+      <DependentUpon>frmStudentDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admission and Registration\frmStudentList.resx">
+      <DependentUpon>frmStudentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\frmLogIn.resx">
+      <DependentUpon>frmLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Billing and Payment\ManageReceipt\RadForm1.resx">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Billing and Payment\ManageReceipt\RadForm2.resx">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Billing and Payment\Payment\RadForm1.resx">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Billing and Payment\Payment\RadForm2.resx">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Billing and Payment\PrintReceipt\RadForm1.resx">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Billing and Payment\PrintReceipt\RadForm2.resx">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Billing and Payment\TransactionReport\RadForm1.resx">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Billing and Payment\TransactionReport\RadForm2.resx">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Course Related Resources\ManageGradeLevelSection\ManageGradeLevelSection.resx">
+      <DependentUpon>ManageGradeLevelSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Course Related Resources\ManageGradeLevelSection\RadForm2.resx">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Course Related Resources\ManageSchedule\RadForm1.resx">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Course Related Resources\ManageSchedule\RadForm2.resx">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Course Related Resources\ManageSubject\frmManageSubject.resx">
+      <DependentUpon>frmManageSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Course Related Resources\ManageSubject\frmLearningAreas.resx">
+      <DependentUpon>frmLearningAreas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Course Related Resources\ManageTeachers\frmTeacherDetails.resx">
+      <DependentUpon>frmTeacherDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Course Related Resources\ManageTeachers\frmTeacherList.resx">
+      <DependentUpon>frmTeacherList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Quarterly Grading\Grading\RadForm1.resx">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quarterly Grading\Grading\RadForm2.resx">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quarterly Grading\PaymentRecord\RadForm1.resx">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quarterly Grading\PaymentRecord\RadForm2.resx">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\GenerateScheduleTeacherStudentClassroom\RadForm1.resx">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\GenerateScheduleTeacherStudentClassroom\RadForm2.resx">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\GenerateStudentListReport\RadForm1.resx">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\GenerateStudentListReport\RadForm2.resx">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\GenerateStudentPermanentRecord\RadForm1.resx">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\GenerateStudentPermanentRecord\RadForm2.resx">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\GenerateStudentStatementofAccount\RadForm1.resx">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\GenerateStudentStatementofAccount\RadForm2.resx">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\GenerateTeacherListReport\RadForm1.resx">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\GenerateTeacherListReport\RadForm2.resx">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scheduling\ScheduleReport\RadForm1.resx">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scheduling\ScheduleReport\RadForm2.resx">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scheduling\Scheduling\RadForm1.resx">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scheduling\Scheduling\RadForm2.resx">
+      <DependentUpon>RadForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\ManageBuilding\frmBuildingDetails.resx">
+      <DependentUpon>frmBuildingDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\ManageBuilding\frmBuildingList.resx">
+      <DependentUpon>frmBuildingList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\ManageCurriculum\frmCurriculumDetails.resx">
+      <DependentUpon>frmCurriculumDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\ManageCurriculum\frmManageCurriculum.resx">
+      <DependentUpon>frmManageCurriculum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\ManageStudentFees\StudentFeeList.resx">
+      <DependentUpon>StudentFeeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\ManageStudentFees\frmManageStudentFee.resx">
+      <DependentUpon>frmManageStudentFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\ManageSY\frmSYList.resx">
+      <DependentUpon>frmSYList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\ManageTimeSlot\frmTimeSlotDetails.resx">
+      <DependentUpon>frmTimeSlotDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\ManageTimeSlot\frmTimeSlotList.resx">
+      <DependentUpon>frmTimeSlotList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\ManageTraitsbyLevel\ManageTraits.resx">
+      <DependentUpon>ManageTraits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\ManageTraitsbyLevel\TraitsList.resx">
+      <DependentUpon>TraitsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\ManageUser\frmUserDetails.resx">
+      <DependentUpon>frmUserDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\ManageUser\frmUserList.resx">
+      <DependentUpon>frmUserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\BuildingServiceRef\eSAR.BuildingServiceRef.Building.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BuildingServiceRef\eSAR.BuildingServiceRef.CreateBuildingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BuildingServiceRef\eSAR.BuildingServiceRef.Room.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BuildingServiceRef\eSAR.BuildingServiceRef.UpdateBuildingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BuildingServiceRef\eSARService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BuildingServiceRef\service.wsdl" />
+    <None Include="Service References\BuildingServiceRef\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BuildingServiceRef\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CurriculumServiceRef\eSAR.CurriculumServiceRef.CreateCurriculumResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CurriculumServiceRef\eSAR.CurriculumServiceRef.Curriculum.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CurriculumServiceRef\eSAR.CurriculumServiceRef.CurriculumSubject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CurriculumServiceRef\eSAR.CurriculumServiceRef.GradeLevel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CurriculumServiceRef\eSAR.CurriculumServiceRef.UpdateCurriculumResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CurriculumServiceRef\eSARService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CurriculumServiceRef\service.wsdl" />
+    <None Include="Service References\CurriculumServiceRef\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CurriculumServiceRef\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GradeLevelServiceRef\eSAR.GradeLevelServiceRef.GradeLevel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GradeLevelServiceRef\eSARService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GradeLevelServiceRef\service.wsdl" />
+    <None Include="Service References\GradeLevelServiceRef\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GradeLevelServiceRef\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LearningAreaServiceRef\eSAR.LearningAreaServiceRef.CreateLearningAreaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LearningAreaServiceRef\eSAR.LearningAreaServiceRef.LearningArea.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LearningAreaServiceRef\eSAR.LearningAreaServiceRef.Subject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LearningAreaServiceRef\eSAR.LearningAreaServiceRef.UpdateLearningAreaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LearningAreaServiceRef\eSARService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LearningAreaServiceRef\service.wsdl" />
+    <None Include="Service References\LearningAreaServiceRef\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LearningAreaServiceRef\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RoomServiceRef\eSAR.RoomServiceRef.CreateRoomResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RoomServiceRef\eSAR.RoomServiceRef.Room.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RoomServiceRef\eSAR.RoomServiceRef.UpdateRoomResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RoomServiceRef\eSARService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RoomServiceRef\service.wsdl" />
+    <None Include="Service References\RoomServiceRef\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RoomServiceRef\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ScholarshipServiceRef\eSAR.ScholarshipServiceRef.AddScholarshipDiscountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ScholarshipServiceRef\eSAR.ScholarshipServiceRef.CreateScholarshipResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ScholarshipServiceRef\eSAR.ScholarshipServiceRef.Scholarship.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ScholarshipServiceRef\eSAR.ScholarshipServiceRef.ScholarshipDiscount.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ScholarshipServiceRef\eSAR.ScholarshipServiceRef.Student.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ScholarshipServiceRef\eSAR.ScholarshipServiceRef.UpdateScholarshipDiscountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ScholarshipServiceRef\eSAR.ScholarshipServiceRef.UpdateScholarshipResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ScholarshipServiceRef\eSARService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ScholarshipServiceRef\service.wsdl" />
+    <None Include="Service References\ScholarshipServiceRef\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ScholarshipServiceRef\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SchoolYearServiceRef\eSAR.SchoolYearServiceRef.CreateSYResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SchoolYearServiceRef\eSAR.SchoolYearServiceRef.DeleteSYResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SchoolYearServiceRef\eSAR.SchoolYearServiceRef.SchoolYear.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SchoolYearServiceRef\eSAR.SchoolYearServiceRef.UpdateSYResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SchoolYearServiceRef\eSARService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SchoolYearServiceRef\service.wsdl" />
+    <None Include="Service References\SchoolYearServiceRef\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SchoolYearServiceRef\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StudentFeeServiceRef\eSAR.StudentFeeServiceRef.CreateFeeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StudentFeeServiceRef\eSAR.StudentFeeServiceRef.Fee.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StudentFeeServiceRef\eSAR.StudentFeeServiceRef.UpdateFeeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StudentFeeServiceRef\eSARService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StudentFeeServiceRef\service.wsdl" />
+    <None Include="Service References\StudentFeeServiceRef\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StudentFeeServiceRef\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StudentServiceRef\eSAR.StudentServiceRef.CreateStudentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StudentServiceRef\eSAR.StudentServiceRef.DismissStudentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StudentServiceRef\eSAR.StudentServiceRef.GetStudentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StudentServiceRef\eSAR.StudentServiceRef.GraduateStudentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StudentServiceRef\eSAR.StudentServiceRef.Student.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StudentServiceRef\eSAR.StudentServiceRef.UpdateStudentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StudentServiceRef\eSARService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StudentServiceRef\service.wsdl" />
+    <None Include="Service References\StudentServiceRef\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StudentServiceRef\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SubjectServiceRef\eSAR.SubjectServiceRef.Subject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SubjectServiceRef\eSARService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SubjectServiceRef\service.wsdl" />
+    <None Include="Service References\SubjectServiceRef\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SubjectServiceRef\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TeacherServiceRef\eSAR.TeacherServiceRef.CreateTeacherResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TeacherServiceRef\eSAR.TeacherServiceRef.DeactivateTeacherResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TeacherServiceRef\eSAR.TeacherServiceRef.GetTeacherResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TeacherServiceRef\eSAR.TeacherServiceRef.Teacher.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TeacherServiceRef\eSAR.TeacherServiceRef.UpdateTeacherResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TeacherServiceRef\eSARService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TeacherServiceRef\service.wsdl" />
+    <None Include="Service References\TeacherServiceRef\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TeacherServiceRef\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TimeslotServiceRef\eSAR.TimeslotServiceRef.ActivateTimeslotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TimeslotServiceRef\eSAR.TimeslotServiceRef.CreateTimeslotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TimeslotServiceRef\eSAR.TimeslotServiceRef.DeactivateTimeslotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TimeslotServiceRef\eSAR.TimeslotServiceRef.DeleteTimeslotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TimeslotServiceRef\eSAR.TimeslotServiceRef.Timeslot.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TimeslotServiceRef\eSAR.TimeslotServiceRef.UpdateTimeslotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\TimeslotServiceRef\eSARService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TimeslotServiceRef\service.wsdl" />
+    <None Include="Service References\TimeslotServiceRef\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TimeslotServiceRef\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserServiceRef\eSAR.UserServiceRef.ActivateUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserServiceRef\eSAR.UserServiceRef.AuthenticateUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserServiceRef\eSAR.UserServiceRef.CreateUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserServiceRef\eSAR.UserServiceRef.DeactivateUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserServiceRef\eSAR.UserServiceRef.DeleteUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserServiceRef\eSAR.UserServiceRef.UpdateUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserServiceRef\eSAR.UserServiceRef.User.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserServiceRef\eSAR.UserServiceRef.UserType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserServiceRef\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserServiceRef\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserServiceRef\item2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserServiceRef\UserService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--sirinie -->
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Images\Admission.png" />
+    <None Include="Service References\CurriculumServiceRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\CurriculumServiceRef\configuration.svcinfo" />
+    <None Include="Service References\CurriculumServiceRef\configuration91.svcinfo" />
+    <None Include="Service References\SchoolYearServiceRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SchoolYearServiceRef\configuration.svcinfo" />
+    <None Include="Service References\SchoolYearServiceRef\configuration91.svcinfo" />
+    <None Include="Service References\ScholarshipServiceRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ScholarshipServiceRef\configuration.svcinfo" />
+    <None Include="Service References\ScholarshipServiceRef\configuration91.svcinfo" />
+    <None Include="Service References\SubjectServiceRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SubjectServiceRef\configuration.svcinfo" />
+    <None Include="Service References\SubjectServiceRef\configuration91.svcinfo" />
+    <None Include="Service References\GradeLevelServiceRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\GradeLevelServiceRef\configuration.svcinfo" />
+    <None Include="Service References\GradeLevelServiceRef\configuration91.svcinfo" />
+    <None Include="Service References\TimeslotServiceRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\TimeslotServiceRef\configuration.svcinfo" />
+    <None Include="Service References\TimeslotServiceRef\configuration91.svcinfo" />
+    <None Include="Service References\StudentFeeServiceRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\StudentFeeServiceRef\configuration.svcinfo" />
+    <None Include="Service References\StudentFeeServiceRef\configuration91.svcinfo" />
+    <None Include="Service References\LearningAreaServiceRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\LearningAreaServiceRef\configuration.svcinfo" />
+    <None Include="Service References\LearningAreaServiceRef\configuration91.svcinfo" />
+    <None Include="Service References\RoomServiceRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\RoomServiceRef\configuration.svcinfo" />
+    <None Include="Service References\RoomServiceRef\configuration91.svcinfo" />
+    <None Include="Service References\BuildingServiceRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BuildingServiceRef\configuration.svcinfo" />
+    <None Include="Service References\BuildingServiceRef\configuration91.svcinfo" />
+    <None Include="Service References\StudentServiceRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\StudentServiceRef\configuration.svcinfo" />
+    <None Include="Service References\StudentServiceRef\configuration91.svcinfo" />
+    <None Include="Service References\TeacherServiceRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\TeacherServiceRef\configuration.svcinfo" />
+    <None Include="Service References\TeacherServiceRef\configuration91.svcinfo" />
+    <None Include="Service References\UserServiceRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\UserServiceRef\configuration.svcinfo" />
+    <None Include="Service References\UserServiceRef\configuration91.svcinfo" />
+    <None Include="Service References\UserServiceRef\item.disco" />
+    <None Include="Resources\Images\AdmissionCustomv6.png" />
+    <Content Include="Resources\Images\board.ico" />
+    <Content Include="Resources\Images\building.png" />
+    <Content Include="Resources\Images\calendar.png" />
+    <Content Include="Resources\Images\CreditCards.ico" />
+    <Content Include="Resources\Images\File.ico" />
+    <Content Include="Resources\Images\Graph.ico" />
+    <Content Include="Resources\Images\Learning.ico" />
+    <Content Include="Resources\Images\profile.jpg" />
+    <Content Include="Resources\Images\Registration.png" />
+    <Content Include="Resources\Images\room.png" />
+    <Content Include="Resources\Images\rooms_48.png" />
+    <Content Include="Resources\Images\schedule.png" />
+    <Content Include="Resources\Images\Setting.ico" />
+    <Content Include="Resources\Images\slots.png" />
+    <Content Include="Resources\Images\spreadsheet.ico" />
+    <Content Include="Resources\Images\StudentAdmission.png" />
+    <Content Include="Resources\Images\timeslots.png" />
+    <Content Include="Resources\Images\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\BuildingServiceRef\" />
+    <WCFMetadataStorage Include="Service References\CurriculumServiceRef\" />
+    <WCFMetadataStorage Include="Service References\GradeLevelServiceRef\" />
+    <WCFMetadataStorage Include="Service References\LearningAreaServiceRef\" />
+    <WCFMetadataStorage Include="Service References\RoomServiceRef\" />
+    <WCFMetadataStorage Include="Service References\ScholarshipServiceRef\" />
+    <WCFMetadataStorage Include="Service References\SchoolYearServiceRef\" />
+    <WCFMetadataStorage Include="Service References\StudentFeeServiceRef\" />
+    <WCFMetadataStorage Include="Service References\StudentServiceRef\" />
+    <WCFMetadataStorage Include="Service References\SubjectServiceRef\" />
+    <WCFMetadataStorage Include="Service References\TeacherServiceRef\" />
+    <WCFMetadataStorage Include="Service References\TimeslotServiceRef\" />
+    <WCFMetadataStorage Include="Service References\UserServiceRef\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

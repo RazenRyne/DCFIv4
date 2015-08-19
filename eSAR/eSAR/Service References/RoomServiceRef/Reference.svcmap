@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fca3b8b9-a119-4c19-91ed-293e0f5bd842" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/eSARService/RoomService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="94786f87-0f82-418e-a8d2-8f612a22ba11" SourceId="1" SourceUrl="http://localhost:8733/eSARService/RoomService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="85688c12-4132-4109-9085-5847d02117b1" SourceId="1" SourceUrl="http://localhost:8733/eSARService/RoomService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="aecc2ca2-9506-427a-bdaa-9ec104bc47c6" SourceId="1" SourceUrl="http://localhost:8733/eSARService/RoomService/mex" />
+    <MetadataFile FileName="eSARService.xsd" MetadataType="Schema" ID="509decf7-3949-43e1-986a-9eb23883b401" SourceId="1" SourceUrl="http://localhost:8733/eSARService/RoomService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

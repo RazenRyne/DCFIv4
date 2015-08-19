@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ScholarshipService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/eSARService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IScholarshipService_GetAllScholarships_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllScholarships" />
+  </wsdl:message>
+  <wsdl:message name="IScholarshipService_GetAllScholarships_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllScholarshipsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScholarshipService_CreateScholarship_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateScholarship" />
+  </wsdl:message>
+  <wsdl:message name="IScholarshipService_CreateScholarship_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateScholarshipResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScholarshipService_AddScholarshipDiscount_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddScholarshipDiscount" />
+  </wsdl:message>
+  <wsdl:message name="IScholarshipService_AddScholarshipDiscount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddScholarshipDiscountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScholarshipService_UpdateScholarship_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateScholarship" />
+  </wsdl:message>
+  <wsdl:message name="IScholarshipService_UpdateScholarship_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateScholarshipResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScholarshipService_GetAllScholarsOfScholarship_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllScholarsOfScholarship" />
+  </wsdl:message>
+  <wsdl:message name="IScholarshipService_GetAllScholarsOfScholarship_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllScholarsOfScholarshipResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScholarshipService_GetAllScholars_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllScholars" />
+  </wsdl:message>
+  <wsdl:message name="IScholarshipService_GetAllScholars_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllScholarsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScholarshipService_GetAllScholarshipDiscount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllScholarshipDiscount" />
+  </wsdl:message>
+  <wsdl:message name="IScholarshipService_GetAllScholarshipDiscount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllScholarshipDiscountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScholarshipService_DeleteScholarshipDiscount_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteScholarshipDiscount" />
+  </wsdl:message>
+  <wsdl:message name="IScholarshipService_DeleteScholarshipDiscount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteScholarshipDiscountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScholarshipService_UpdateScholarshipDiscount_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateScholarshipDiscount" />
+  </wsdl:message>
+  <wsdl:message name="IScholarshipService_UpdateScholarshipDiscount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateScholarshipDiscountResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IScholarshipService">
+    <wsdl:operation name="GetAllScholarships">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScholarshipService/GetAllScholarships" message="tns:IScholarshipService_GetAllScholarships_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScholarshipService/GetAllScholarshipsResponse" message="tns:IScholarshipService_GetAllScholarships_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateScholarship">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScholarshipService/CreateScholarship" message="tns:IScholarshipService_CreateScholarship_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScholarshipService/CreateScholarshipResponse" message="tns:IScholarshipService_CreateScholarship_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddScholarshipDiscount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScholarshipService/AddScholarshipDiscount" message="tns:IScholarshipService_AddScholarshipDiscount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScholarshipService/AddScholarshipDiscountResponse" message="tns:IScholarshipService_AddScholarshipDiscount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateScholarship">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScholarshipService/UpdateScholarship" message="tns:IScholarshipService_UpdateScholarship_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScholarshipService/UpdateScholarshipResponse" message="tns:IScholarshipService_UpdateScholarship_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllScholarsOfScholarship">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScholarshipService/GetAllScholarsOfScholarship" message="tns:IScholarshipService_GetAllScholarsOfScholarship_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScholarshipService/GetAllScholarsOfScholarshipResponse" message="tns:IScholarshipService_GetAllScholarsOfScholarship_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllScholars">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScholarshipService/GetAllScholars" message="tns:IScholarshipService_GetAllScholars_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScholarshipService/GetAllScholarsResponse" message="tns:IScholarshipService_GetAllScholars_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllScholarshipDiscount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScholarshipService/GetAllScholarshipDiscount" message="tns:IScholarshipService_GetAllScholarshipDiscount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScholarshipService/GetAllScholarshipDiscountResponse" message="tns:IScholarshipService_GetAllScholarshipDiscount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteScholarshipDiscount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScholarshipService/DeleteScholarshipDiscount" message="tns:IScholarshipService_DeleteScholarshipDiscount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScholarshipService/DeleteScholarshipDiscountResponse" message="tns:IScholarshipService_DeleteScholarshipDiscount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateScholarshipDiscount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScholarshipService/UpdateScholarshipDiscount" message="tns:IScholarshipService_UpdateScholarshipDiscount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScholarshipService/UpdateScholarshipDiscountResponse" message="tns:IScholarshipService_UpdateScholarshipDiscount_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IScholarshipService" type="tns:IScholarshipService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllScholarships">
+      <soap:operation soapAction="http://tempuri.org/IScholarshipService/GetAllScholarships" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateScholarship">
+      <soap:operation soapAction="http://tempuri.org/IScholarshipService/CreateScholarship" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddScholarshipDiscount">
+      <soap:operation soapAction="http://tempuri.org/IScholarshipService/AddScholarshipDiscount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateScholarship">
+      <soap:operation soapAction="http://tempuri.org/IScholarshipService/UpdateScholarship" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllScholarsOfScholarship">
+      <soap:operation soapAction="http://tempuri.org/IScholarshipService/GetAllScholarsOfScholarship" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllScholars">
+      <soap:operation soapAction="http://tempuri.org/IScholarshipService/GetAllScholars" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllScholarshipDiscount">
+      <soap:operation soapAction="http://tempuri.org/IScholarshipService/GetAllScholarshipDiscount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteScholarshipDiscount">
+      <soap:operation soapAction="http://tempuri.org/IScholarshipService/DeleteScholarshipDiscount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateScholarshipDiscount">
+      <soap:operation soapAction="http://tempuri.org/IScholarshipService/UpdateScholarshipDiscount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ScholarshipService">
+    <wsdl:port name="BasicHttpBinding_IScholarshipService" binding="tns:BasicHttpBinding_IScholarshipService">
+      <soap:address location="http://localhost:8733/eSARService/ScholarshipService/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

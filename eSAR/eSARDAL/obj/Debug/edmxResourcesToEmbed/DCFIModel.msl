@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DCFIModelStoreContainer" CdmEntityContainer="DCFIEntities">
+    <EntitySetMapping Name="Buildings">
+      <EntityTypeMapping TypeName="DCFIModel.Building">
+        <MappingFragment StoreEntitySet="Buildings">
+          <ScalarProperty Name="BuildingCode" ColumnName="BuildingCode" />
+          <ScalarProperty Name="BuildingName" ColumnName="BuildingName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Deactivated" ColumnName="Deactivated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Curriculums">
+      <EntityTypeMapping TypeName="DCFIModel.Curriculum">
+        <MappingFragment StoreEntitySet="Curriculums">
+          <ScalarProperty Name="CurriculumCode" ColumnName="CurriculumCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CurrentCurr" ColumnName="CurrentCurr" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CurriculumSubjects">
+      <EntityTypeMapping TypeName="DCFIModel.CurriculumSubject">
+        <MappingFragment StoreEntitySet="CurriculumSubjects">
+          <ScalarProperty Name="NumberOfUnits" ColumnName="NumberOfUnits" />
+          <ScalarProperty Name="CurrSubCode" ColumnName="CurrSubCode" />
+          <ScalarProperty Name="SubjectCode" ColumnName="SubjectCode" />
+          <ScalarProperty Name="CurriculumCode" ColumnName="CurriculumCode" />
+          <ScalarProperty Name="Deactivated" ColumnName="Deactivated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fees">
+      <EntityTypeMapping TypeName="DCFIModel.Fee">
+        <MappingFragment StoreEntitySet="Fees">
+          <ScalarProperty Name="GradeLevel" ColumnName="GradeLevel" />
+          <ScalarProperty Name="SYImplemented" ColumnName="SYImplemented" />
+          <ScalarProperty Name="DateSet" ColumnName="DateSet" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="FeeCode" ColumnName="FeeCode" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="FeeDescription" ColumnName="FeeDescription" />
+          <ScalarProperty Name="Deactivated" ColumnName="Deactivated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GradeLevels">
+      <EntityTypeMapping TypeName="DCFIModel.GradeLevel">
+        <MappingFragment StoreEntitySet="GradeLevels">
+          <ScalarProperty Name="GradeLevel1" ColumnName="GradeLevel" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GradeSections">
+      <EntityTypeMapping TypeName="DCFIModel.GradeSection">
+        <MappingFragment StoreEntitySet="GradeSections">
+          <ScalarProperty Name="GradeSectionCode" ColumnName="GradeSectionCode" />
+          <ScalarProperty Name="GradeLevel" ColumnName="GradeLevel" />
+          <ScalarProperty Name="Section" ColumnName="Section" />
+          <ScalarProperty Name="HomeRoomNumber" ColumnName="HomeRoomNumber" />
+          <ScalarProperty Name="SY" ColumnName="SY" />
+          <ScalarProperty Name="HomeRoomTeacherId" ColumnName="HomeRoomTeacherId" />
+          <ScalarProperty Name="Deactivated" ColumnName="Deactivated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LearningAreas">
+      <EntityTypeMapping TypeName="DCFIModel.LearningArea">
+        <MappingFragment StoreEntitySet="LearningAreas">
+          <ScalarProperty Name="Units" ColumnName="Units" />
+          <ScalarProperty Name="RatePerUnit" ColumnName="RatePerUnit" />
+          <ScalarProperty Name="Academic" ColumnName="Academic" />
+          <ScalarProperty Name="LearningAreaCode" ColumnName="LearningAreaCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logs">
+      <EntityTypeMapping TypeName="DCFIModel.Log">
+        <MappingFragment StoreEntitySet="Logs">
+          <ScalarProperty Name="CLUD" ColumnName="CLUD" />
+          <ScalarProperty Name="LogId" ColumnName="LogId" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="LogDate" ColumnName="LogDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Payments">
+      <EntityTypeMapping TypeName="DCFIModel.Payment">
+        <MappingFragment StoreEntitySet="Payment">
+          <ScalarProperty Name="ORNo" ColumnName="ORNo" />
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="SettlementFor" ColumnName="SettlementFor" />
+          <ScalarProperty Name="ReceivedFrom" ColumnName="ReceivedFrom" />
+          <ScalarProperty Name="TIN" ColumnName="TIN" />
+          <ScalarProperty Name="PaidAt" ColumnName="PaidAt" />
+          <ScalarProperty Name="BusinessStyle" ColumnName="BusinessStyle" />
+          <ScalarProperty Name="PaidTo" ColumnName="PaidTo" />
+          <ScalarProperty Name="Cancelled" ColumnName="Cancelled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentDetails">
+      <EntityTypeMapping TypeName="DCFIModel.PaymentDetail">
+        <MappingFragment StoreEntitySet="PaymentDetails">
+          <ScalarProperty Name="DetailNumber" ColumnName="DetailNumber" />
+          <ScalarProperty Name="ORNo" ColumnName="ORNo" />
+          <ScalarProperty Name="FeeCode" ColumnName="FeeCode" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rooms">
+      <EntityTypeMapping TypeName="DCFIModel.Room">
+        <MappingFragment StoreEntitySet="Rooms">
+          <ScalarProperty Name="RoomId" ColumnName="RoomId" />
+          <ScalarProperty Name="RoomCode" ColumnName="RoomCode" />
+          <ScalarProperty Name="RoomNumber" ColumnName="RoomNumber" />
+          <ScalarProperty Name="BuildingCode" ColumnName="BuildingCode" />
+          <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Deactivated" ColumnName="Deactivated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Scholarships">
+      <EntityTypeMapping TypeName="DCFIModel.Scholarship">
+        <MappingFragment StoreEntitySet="Scholarships">
+          <ScalarProperty Name="ScholarshipCode" ColumnName="ScholarshipCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Privilege" ColumnName="Privilege" />
+          <ScalarProperty Name="Condition" ColumnName="Condition" />
+          <ScalarProperty Name="Deactivated" ColumnName="Deactivated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentEnrollments">
+      <EntityTypeMapping TypeName="DCFIModel.StudentEnrollment">
+        <MappingFragment StoreEntitySet="StudentEnrollments">
+          <ScalarProperty Name="StudentSY" ColumnName="StudentSY" />
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="SY" ColumnName="SY" />
+          <ScalarProperty Name="GradeLevel" ColumnName="GradeLevel" />
+          <ScalarProperty Name="GradeSectionCode" ColumnName="GradeSectionCode" />
+          <ScalarProperty Name="Dismissed" ColumnName="Dismissed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="DCFIModel.Student">
+        <MappingFragment StoreEntitySet="Students">
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Religion" ColumnName="Religion" />
+          <ScalarProperty Name="Graduated" ColumnName="Graduated" />
+          <ScalarProperty Name="Dismissed" ColumnName="Dismissed" />
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="POBAddress" ColumnName="POBAddress" />
+          <ScalarProperty Name="POBBarangay" ColumnName="POBBarangay" />
+          <ScalarProperty Name="POBTownCity" ColumnName="POBTownCity" />
+          <ScalarProperty Name="POBProvince" ColumnName="POBProvince" />
+          <ScalarProperty Name="HomeAddress" ColumnName="HomeAddress" />
+          <ScalarProperty Name="HomeBarangay" ColumnName="HomeBarangay" />
+          <ScalarProperty Name="HomeTownCity" ColumnName="HomeTownCity" />
+          <ScalarProperty Name="HomeProvince" ColumnName="HomeProvince" />
+          <ScalarProperty Name="SchoolLastAttended" ColumnName="SchoolLastAttended" />
+          <ScalarProperty Name="FathersName" ColumnName="FathersName" />
+          <ScalarProperty Name="FathersOccupation" ColumnName="FathersOccupation" />
+          <ScalarProperty Name="FathersAverageYearlyIncome" ColumnName="FathersAverageYearlyIncome" />
+          <ScalarProperty Name="FathersEducation" ColumnName="FathersEducation" />
+          <ScalarProperty Name="MothersMaidenName" ColumnName="MothersMaidenName" />
+          <ScalarProperty Name="MothersOccupation" ColumnName="MothersOccupation" />
+          <ScalarProperty Name="MothersAverageYearlyIncome" ColumnName="MothersAverageYearlyIncome" />
+          <ScalarProperty Name="MothersEducation" ColumnName="MothersEducation" />
+          <ScalarProperty Name="GuardiansName" ColumnName="GuardiansName" />
+          <ScalarProperty Name="GuardiansOccupation" ColumnName="GuardiansOccupation" />
+          <ScalarProperty Name="GuardiansAverageYearlyIncome" ColumnName="GuardiansAverageYearlyIncome" />
+          <ScalarProperty Name="MadrasahEnrolled" ColumnName="MadrasahEnrolled" />
+          <ScalarProperty Name="DateAdmitted" ColumnName="DateAdmitted" />
+          <ScalarProperty Name="GradeLevel" ColumnName="GradeLevel" />
+          <ScalarProperty Name="Average" ColumnName="Average" />
+          <ScalarProperty Name="Card" ColumnName="Card" />
+          <ScalarProperty Name="GoodMoral" ColumnName="GoodMoral" />
+          <ScalarProperty Name="BirthCertificate" ColumnName="BirthCertificate" />
+          <ScalarProperty Name="ScholarshipCode" ColumnName="ScholarshipCode" />
+          <ScalarProperty Name="LastSYAttendedDCFI" ColumnName="LastSYAttendedDCFI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentSubjects">
+      <EntityTypeMapping TypeName="DCFIModel.StudentSubject">
+        <MappingFragment StoreEntitySet="StudentSubjects">
+          <ScalarProperty Name="StudentEnrSubCode" ColumnName="StudentEnrSubCode" />
+          <ScalarProperty Name="StudentSY" ColumnName="StudentSY" />
+          <ScalarProperty Name="SubjectCode" ColumnName="SubjectCode" />
+          <ScalarProperty Name="FirstPeriodicRating" ColumnName="FirstPeriodicRating" />
+          <ScalarProperty Name="SecondPeriodicRating" ColumnName="SecondPeriodicRating" />
+          <ScalarProperty Name="ThirdPeriodicRating" ColumnName="ThirdPeriodicRating" />
+          <ScalarProperty Name="FourthPeriodicRating" ColumnName="FourthPeriodicRating" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentTraits">
+      <EntityTypeMapping TypeName="DCFIModel.StudentTrait">
+        <MappingFragment StoreEntitySet="StudentTraits">
+          <ScalarProperty Name="StudentEnrTraitCode" ColumnName="StudentEnrTraitCode" />
+          <ScalarProperty Name="TraitCode" ColumnName="TraitCode" />
+          <ScalarProperty Name="StudentSY" ColumnName="StudentSY" />
+          <ScalarProperty Name="FirstPeriodicRating" ColumnName="FirstPeriodicRating" />
+          <ScalarProperty Name="SecondPeriodicRating" ColumnName="SecondPeriodicRating" />
+          <ScalarProperty Name="ThirdPeriodicRating" ColumnName="ThirdPeriodicRating" />
+          <ScalarProperty Name="FourthPeriodicRating" ColumnName="FourthPeriodicRating" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubjectAssignments">
+      <EntityTypeMapping TypeName="DCFIModel.SubjectAssignment">
+        <MappingFragment StoreEntitySet="SubjectAssignments">
+          <ScalarProperty Name="SubjectAssignmentNumber" ColumnName="SubjectAssignmentNumber" />
+          <ScalarProperty Name="SY" ColumnName="SY" />
+          <ScalarProperty Name="SubjectCode" ColumnName="SubjectCode" />
+          <ScalarProperty Name="TimeSlotCode" ColumnName="TimeSlotCode" />
+          <ScalarProperty Name="RoomCode" ColumnName="RoomCode" />
+          <ScalarProperty Name="TeacherId" ColumnName="TeacherId" />
+          <ScalarProperty Name="GradeSectionCode" ColumnName="GradeSectionCode" />
+          <ScalarProperty Name="Deactivated" ColumnName="Deactivated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subjects">
+      <EntityTypeMapping TypeName="DCFIModel.Subject">
+        <MappingFragment StoreEntitySet="Subjects">
+          <ScalarProperty Name="SubjectID" ColumnName="SubjectID" />
+          <ScalarProperty Name="SubjectCode" ColumnName="SubjectCode" />
+          <ScalarProperty Name="LearningAreaCode" ColumnName="LearningAreaCode" />
+          <ScalarProperty Name="GradeLevel" ColumnName="GradeLevel" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeacherEducationalBackgrounds">
+      <EntityTypeMapping TypeName="DCFIModel.TeacherEducationalBackground">
+        <MappingFragment StoreEntitySet="TeacherEducationalBackground">
+          <ScalarProperty Name="TeacherId" ColumnName="TeacherId" />
+          <ScalarProperty Name="TEBId" ColumnName="TEBId" />
+          <ScalarProperty Name="EducLevel" ColumnName="EducLevel" />
+          <ScalarProperty Name="NameOfSchool" ColumnName="NameOfSchool" />
+          <ScalarProperty Name="TEBYearFrom" ColumnName="TEBYearFrom" />
+          <ScalarProperty Name="TEBYearTo" ColumnName="TEBYearTo" />
+          <ScalarProperty Name="Course" ColumnName="Course" />
+          <ScalarProperty Name="HonorsReceived" ColumnName="HonorsReceived" />
+          <ScalarProperty Name="Deactivated" ColumnName="Deactivated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeacherEligibilities">
+      <EntityTypeMapping TypeName="DCFIModel.TeacherEligibility">
+        <MappingFragment StoreEntitySet="TeacherEligibilities">
+          <ScalarProperty Name="TeacherId" ColumnName="TeacherId" />
+          <ScalarProperty Name="EligibilityId" ColumnName="EligibilityId" />
+          <ScalarProperty Name="Eligibility" ColumnName="Eligibility" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="DateOfExam" ColumnName="DateOfExam" />
+          <ScalarProperty Name="PlaceOfExam" ColumnName="PlaceOfExam" />
+          <ScalarProperty Name="LicenseNumber" ColumnName="LicenseNumber" />
+          <ScalarProperty Name="IssueDate" ColumnName="IssueDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Teachers">
+      <EntityTypeMapping TypeName="DCFIModel.Teacher">
+        <MappingFragment StoreEntitySet="Teachers">
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="PERAA" ColumnName="PERAA" />
+          <ScalarProperty Name="TeacherId" ColumnName="TeacherId" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="Deactivated" ColumnName="Deactivated" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="TIN" ColumnName="TIN" />
+          <ScalarProperty Name="DateOfAppointment" ColumnName="DateOfAppointment" />
+          <ScalarProperty Name="EmploymentStatus" ColumnName="EmploymentStatus" />
+          <ScalarProperty Name="POBProvince" ColumnName="POBProvince" />
+          <ScalarProperty Name="POBMunicipality" ColumnName="POBMunicipality" />
+          <ScalarProperty Name="CivilStatus" ColumnName="CivilStatus" />
+          <ScalarProperty Name="HeightCm" ColumnName="HeightCm" />
+          <ScalarProperty Name="WeightKg" ColumnName="WeightKg" />
+          <ScalarProperty Name="BloodType" ColumnName="BloodType" />
+          <ScalarProperty Name="SSSNum" ColumnName="SSSNum" />
+          <ScalarProperty Name="PagIBIGNo" ColumnName="PagIBIGNo" />
+          <ScalarProperty Name="PhilHealthNo" ColumnName="PhilHealthNo" />
+          <ScalarProperty Name="RAStreetName" ColumnName="RAStreetName" />
+          <ScalarProperty Name="RARegion" ColumnName="RARegion" />
+          <ScalarProperty Name="RAProvince" ColumnName="RAProvince" />
+          <ScalarProperty Name="RAMunicipality" ColumnName="RAMunicipality" />
+          <ScalarProperty Name="ResTelephoneNo" ColumnName="ResTelephoneNo" />
+          <ScalarProperty Name="PAStreetName" ColumnName="PAStreetName" />
+          <ScalarProperty Name="PARegion" ColumnName="PARegion" />
+          <ScalarProperty Name="PAProvince" ColumnName="PAProvince" />
+          <ScalarProperty Name="PAMunicipality" ColumnName="PAMunicipality" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="PreviousSchool" ColumnName="PreviousSchool" />
+          <ScalarProperty Name="DialectSpoken" ColumnName="DialectSpoken" />
+          <ScalarProperty Name="SpouseLastName" ColumnName="SpouseLastName" />
+          <ScalarProperty Name="SpouseFirstName" ColumnName="SpouseFirstName" />
+          <ScalarProperty Name="SpouseMiddleName" ColumnName="SpouseMiddleName" />
+          <ScalarProperty Name="SpouseOccupation" ColumnName="SpouseOccupation" />
+          <ScalarProperty Name="SpouseBusinessAdd" ColumnName="SpouseBusinessAdd" />
+          <ScalarProperty Name="SpouseEmployerName" ColumnName="SpouseEmployerName" />
+          <ScalarProperty Name="SpouseTelephoneNo" ColumnName="SpouseTelephoneNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Timeslots">
+      <EntityTypeMapping TypeName="DCFIModel.Timeslot">
+        <MappingFragment StoreEntitySet="Timeslots">
+          <ScalarProperty Name="TimeSlotCode" ColumnName="TimeSlotCode" />
+          <ScalarProperty Name="TimeStart" ColumnName="TimeStart" />
+          <ScalarProperty Name="TimeEnd" ColumnName="TimeEnd" />
+          <ScalarProperty Name="Days" ColumnName="Days" />
+          <ScalarProperty Name="Deactivated" ColumnName="Deactivated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrainingSeminars">
+      <EntityTypeMapping TypeName="DCFIModel.TrainingSeminar">
+        <MappingFragment StoreEntitySet="TrainingSeminars">
+          <ScalarProperty Name="TeacherId" ColumnName="TeacherId" />
+          <ScalarProperty Name="TSID" ColumnName="TSID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="AreaOfTraining" ColumnName="AreaOfTraining" />
+          <ScalarProperty Name="DateFrom" ColumnName="DateFrom" />
+          <ScalarProperty Name="DateTo" ColumnName="DateTo" />
+          <ScalarProperty Name="NoOfHours" ColumnName="NoOfHours" />
+          <ScalarProperty Name="ConductedBy" ColumnName="ConductedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Traits">
+      <EntityTypeMapping TypeName="DCFIModel.Trait">
+        <MappingFragment StoreEntitySet="Traits">
+          <ScalarProperty Name="TraitCode" ColumnName="TraitCode" />
+          <ScalarProperty Name="GradeLevel" ColumnName="GradeLevel" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="DCFIModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="UserTypeCode" ColumnName="UserTypeCode" />
+          <ScalarProperty Name="Deactivated" ColumnName="Deactivated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserTypes">
+      <EntityTypeMapping TypeName="DCFIModel.UserType">
+        <MappingFragment StoreEntitySet="UserTypes">
+          <ScalarProperty Name="UserTypeCode" ColumnName="UserTypeCode" />
+          <ScalarProperty Name="UserType1" ColumnName="UserType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkExperiences">
+      <EntityTypeMapping TypeName="DCFIModel.WorkExperience">
+        <MappingFragment StoreEntitySet="WorkExperiences">
+          <ScalarProperty Name="TeacherId" ColumnName="TeacherId" />
+          <ScalarProperty Name="WEId" ColumnName="WEId" />
+          <ScalarProperty Name="WorkExpFrom" ColumnName="WorkExpFrom" />
+          <ScalarProperty Name="WorkExpTo" ColumnName="WorkExpTo" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="MonthlySalary" ColumnName="MonthlySalary" />
+          <ScalarProperty Name="StatusOfEmployment" ColumnName="StatusOfEmployment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AllUsers">
+      <EntityTypeMapping TypeName="DCFIModel.AllUser">
+        <MappingFragment StoreEntitySet="AllUsers">
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="middlename" ColumnName="middlename" />
+          <ScalarProperty Name="deactivated" ColumnName="deactivated" />
+          <ScalarProperty Name="usertypecode" ColumnName="usertypecode" />
+          <ScalarProperty Name="usertype" ColumnName="usertype" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClassLists">
+      <EntityTypeMapping TypeName="DCFIModel.ClassList">
+        <MappingFragment StoreEntitySet="ClassList">
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="Fullname_lmf" ColumnName="Fullname_lmf" />
+          <ScalarProperty Name="StudentSY" ColumnName="StudentSY" />
+          <ScalarProperty Name="GradeSectionCode" ColumnName="GradeSectionCode" />
+          <ScalarProperty Name="SY" ColumnName="SY" />
+          <ScalarProperty Name="SubjectAssignmentNumber" ColumnName="SubjectAssignmentNumber" />
+          <ScalarProperty Name="SubjectCode" ColumnName="SubjectCode" />
+          <ScalarProperty Name="RoomCode" ColumnName="RoomCode" />
+          <ScalarProperty Name="TeacherId" ColumnName="TeacherId" />
+          <ScalarProperty Name="TimeslotCode" ColumnName="TimeslotCode" />
+          <ScalarProperty Name="GradeLevel" ColumnName="GradeLevel" />
+          <ScalarProperty Name="Section" ColumnName="Section" />
+          <ScalarProperty Name="TimeStart" ColumnName="TimeStart" />
+          <ScalarProperty Name="TimeEnd" ColumnName="TimeEnd" />
+          <ScalarProperty Name="Days" ColumnName="Days" />
+          <ScalarProperty Name="RoomNumber" ColumnName="RoomNumber" />
+          <ScalarProperty Name="BuildingCode" ColumnName="BuildingCode" />
+          <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+          <ScalarProperty Name="Fullname_fml" ColumnName="Fullname_fml" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentLists">
+      <EntityTypeMapping TypeName="DCFIModel.StudentList">
+        <MappingFragment StoreEntitySet="StudentList">
+          <ScalarProperty Name="studentid" ColumnName="studentid" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="middlename" ColumnName="middlename" />
+          <ScalarProperty Name="Fullname_fml" ColumnName="Fullname_fml" />
+          <ScalarProperty Name="Fullname_lmf" ColumnName="Fullname_lmf" />
+          <ScalarProperty Name="GradeLevel" ColumnName="GradeLevel" />
+          <ScalarProperty Name="GradeSectionCode" ColumnName="GradeSectionCode" />
+          <ScalarProperty Name="SY" ColumnName="SY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeacherLists">
+      <EntityTypeMapping TypeName="DCFIModel.TeacherList">
+        <MappingFragment StoreEntitySet="TeacherList">
+          <ScalarProperty Name="teacherid" ColumnName="teacherid" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="middlename" ColumnName="middlename" />
+          <ScalarProperty Name="Fullname_fml" ColumnName="Fullname_fml" />
+          <ScalarProperty Name="Fullname_lmf" ColumnName="Fullname_lmf" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Siblings">
+      <EntityTypeMapping TypeName="DCFIModel.Sibling">
+        <MappingFragment StoreEntitySet="Siblings">
+          <ScalarProperty Name="SiblingStudentId" ColumnName="SiblingStudentId" />
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+          <ScalarProperty Name="SiblingId" ColumnName="SiblingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentAssessments">
+      <EntityTypeMapping TypeName="DCFIModel.StudentAssessment">
+        <MappingFragment StoreEntitySet="StudentAssessment">
+          <ScalarProperty Name="FeeCode" ColumnName="FeeCode" />
+          <ScalarProperty Name="StudentSY" ColumnName="StudentSY" />
+          <ScalarProperty Name="StudentAssessmentId" ColumnName="StudentAssessmentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeacherChildrens">
+      <EntityTypeMapping TypeName="DCFIModel.TeacherChildren">
+        <MappingFragment StoreEntitySet="TeacherChildren">
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="ChildId" ColumnName="ChildId" />
+          <ScalarProperty Name="TeacherId" ColumnName="TeacherId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SchoolYears">
+      <EntityTypeMapping TypeName="DCFIModel.SchoolYear">
+        <MappingFragment StoreEntitySet="SchoolYear">
+          <ScalarProperty Name="CurrentSY" ColumnName="CurrentSY" />
+          <ScalarProperty Name="SY" ColumnName="SY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScholarshipDiscounts">
+      <EntityTypeMapping TypeName="DCFIModel.ScholarshipDiscount">
+        <MappingFragment StoreEntitySet="ScholarshipDiscounts">
+          <ScalarProperty Name="ScholarshipDiscountId" ColumnName="ScholarshipDiscountId" />
+          <ScalarProperty Name="Deactivated" ColumnName="Deactivated" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="FeeCode" ColumnName="FeeCode" />
+          <ScalarProperty Name="ScholarshipCode" ColumnName="ScholarshipCode" />
+          <ScalarProperty Name="ScholarshipFeeCode" ColumnName="ScholarshipFeeCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

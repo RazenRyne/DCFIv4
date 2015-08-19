@@ -1,0 +1,13 @@
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARDAL\bin\Debug\eSARDAL.dll.config
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARDAL\bin\Debug\eSARDAL.dll
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARDAL\bin\Debug\eSARDAL.pdb
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARDAL\bin\Debug\EntityFramework.dll
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARDAL\bin\Debug\eSARBDO.dll
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARDAL\bin\Debug\eSARBDO.pdb
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARDAL\bin\Debug\EntityFramework.xml
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARDAL\obj\Debug\eSARDAL.csprojResolveAssemblyReference.cache
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARDAL\obj\Debug\eSARDAL.dll
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARDAL\obj\Debug\eSARDAL.pdb
+C:\Users\S.Tabanao\Source\Repos\DCFIv3\eSAR\eSARDAL\bin\Debug\App.Config

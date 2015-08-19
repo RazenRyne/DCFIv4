@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/eSARService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/eSARService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfGradeLevel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GradeLevel" nillable="true" type="tns:GradeLevel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGradeLevel" nillable="true" type="tns:ArrayOfGradeLevel" />
+  <xs:complexType name="GradeLevel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GradeLev" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StudentFees" nillable="true" type="tns:ArrayOfFee" />
+      <xs:element minOccurs="0" name="Traits" nillable="true" type="tns:ArrayOfTrait" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GradeLevel" nillable="true" type="tns:GradeLevel" />
+  <xs:complexType name="ArrayOfFee">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Fee" nillable="true" type="tns:Fee" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFee" nillable="true" type="tns:ArrayOfFee" />
+  <xs:complexType name="Fee">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="DateSet" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Deactivated" type="xs:boolean" />
+      <xs:element minOccurs="0" name="FeeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FeeDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GradeLevel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SYImplemented" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Unit" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Fee" nillable="true" type="tns:Fee" />
+  <xs:complexType name="ArrayOfTrait">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Trait" nillable="true" type="tns:Trait" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrait" nillable="true" type="tns:ArrayOfTrait" />
+  <xs:complexType name="Trait">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GradeLevel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TraitCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Trait" nillable="true" type="tns:Trait" />
+  <xs:complexType name="Curriculum">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CurrentCurr" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CurriculumCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CurriculumSubjects" nillable="true" type="tns:ArrayOfCurriculumSubject" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Curriculum" nillable="true" type="tns:Curriculum" />
+  <xs:complexType name="ArrayOfCurriculumSubject">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CurriculumSubject" nillable="true" type="tns:CurriculumSubject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCurriculumSubject" nillable="true" type="tns:ArrayOfCurriculumSubject" />
+  <xs:complexType name="CurriculumSubject">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Academic" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CurrDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CurrSubCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CurrentCurr" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CurriculumCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Deactivated" type="xs:boolean" />
+      <xs:element minOccurs="0" name="GradeLevel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LearningAreaCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RatePerUnit" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="Subj" nillable="true" type="tns:Subject" />
+      <xs:element minOccurs="0" name="SubjectCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubjectDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Units" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CurriculumSubject" nillable="true" type="tns:CurriculumSubject" />
+  <xs:complexType name="Subject">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GradeLevel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LArea" nillable="true" type="tns:LearningArea" />
+      <xs:element minOccurs="0" name="LearningAreaCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubjectCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Subject" nillable="true" type="tns:Subject" />
+  <xs:complexType name="LearningArea">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Academic" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LearningAreaCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RatePerUnit" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="Subjects" nillable="true" type="tns:ArrayOfSubject" />
+      <xs:element minOccurs="0" name="Units" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LearningArea" nillable="true" type="tns:LearningArea" />
+  <xs:complexType name="ArrayOfSubject">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Subject" nillable="true" type="tns:Subject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSubject" nillable="true" type="tns:ArrayOfSubject" />
+  <xs:complexType name="ArrayOfCurriculum">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Curriculum" nillable="true" type="tns:Curriculum" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCurriculum" nillable="true" type="tns:ArrayOfCurriculum" />
+</xs:schema>

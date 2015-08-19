@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/eSARService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/eSARService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Teacher">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BloodType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CivilStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DOB" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DateOfAppointment" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Deactivated" type="xs:boolean" />
+      <xs:element minOccurs="0" name="DialectSpoken" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmploymentStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HeightCm" type="xs:int" />
+      <xs:element minOccurs="0" name="Image" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MobileNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PAMunicipality" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PAProvince" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PARegion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PAStreetName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PERAA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="POBMunicipality" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="POBProvince" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PagIBIGNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhilHealthNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PreviousSchool" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RAMunicipality" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RAProvince" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RARegion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RAStreetName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResTelephoneNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SSSNum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SpouseBusinessAdd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SpouseEmployerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SpouseFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SpouseLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SpouseMiddleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SpouseOccupation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SpouseTelephoneNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TIN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TeacherChildrens" nillable="true" type="tns:ArrayOfTeacherChildren" />
+      <xs:element minOccurs="0" name="TeacherEducationalBackgrounds" nillable="true" type="tns:ArrayOfTeacherEducationalBackground" />
+      <xs:element minOccurs="0" name="TeacherEligibilities" nillable="true" type="tns:ArrayOfTeacherEligibility" />
+      <xs:element minOccurs="0" name="TeacherId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrainingSeminars" nillable="true" type="tns:ArrayOfTrainingSeminar" />
+      <xs:element minOccurs="0" name="WeightKg" type="xs:double" />
+      <xs:element minOccurs="0" name="WorkExperiences" nillable="true" type="tns:ArrayOfWorkExperience" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Teacher" nillable="true" type="tns:Teacher" />
+  <xs:complexType name="ArrayOfTeacherChildren">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TeacherChildren" nillable="true" type="tns:TeacherChildren" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTeacherChildren" nillable="true" type="tns:ArrayOfTeacherChildren" />
+  <xs:complexType name="TeacherChildren">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ChildId" type="xs:int" />
+      <xs:element minOccurs="0" name="DOB" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TeacherId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TeacherChildren" nillable="true" type="tns:TeacherChildren" />
+  <xs:complexType name="ArrayOfTeacherEducationalBackground">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TeacherEducationalBackground" nillable="true" type="tns:TeacherEducationalBackground" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTeacherEducationalBackground" nillable="true" type="tns:ArrayOfTeacherEducationalBackground" />
+  <xs:complexType name="TeacherEducationalBackground">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Course" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Deactivated" type="xs:boolean" />
+      <xs:element minOccurs="0" name="EducLevel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HonorsReceived" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NameOfSchool" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TEBId" type="xs:int" />
+      <xs:element minOccurs="0" name="TEBYearFrom" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TEBYearTo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TeacherId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TeacherEducationalBackground" nillable="true" type="tns:TeacherEducationalBackground" />
+  <xs:complexType name="ArrayOfTeacherEligibility">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TeacherEligibility" nillable="true" type="tns:TeacherEligibility" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTeacherEligibility" nillable="true" type="tns:ArrayOfTeacherEligibility" />
+  <xs:complexType name="TeacherEligibility">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DateOfExam" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Eligibility" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EligibilityId" type="xs:int" />
+      <xs:element minOccurs="0" name="IssueDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LicenseNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PlaceOfExam" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rating" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TeacherId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TeacherEligibility" nillable="true" type="tns:TeacherEligibility" />
+  <xs:complexType name="ArrayOfTrainingSeminar">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrainingSeminar" nillable="true" type="tns:TrainingSeminar" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrainingSeminar" nillable="true" type="tns:ArrayOfTrainingSeminar" />
+  <xs:complexType name="TrainingSeminar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AreaOfTraining" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ConductedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DateFrom" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DateTo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="NoOfHours" type="xs:double" />
+      <xs:element minOccurs="0" name="TSID" type="xs:int" />
+      <xs:element minOccurs="0" name="TeacherId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrainingSeminar" nillable="true" type="tns:TrainingSeminar" />
+  <xs:complexType name="ArrayOfWorkExperience">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WorkExperience" nillable="true" type="tns:WorkExperience" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWorkExperience" nillable="true" type="tns:ArrayOfWorkExperience" />
+  <xs:complexType name="WorkExperience">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CompanyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MonthlySalary" type="xs:double" />
+      <xs:element minOccurs="0" name="Position" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StatusOfEmployment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TeacherId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WEId" type="xs:int" />
+      <xs:element minOccurs="0" name="WorkExpFrom" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="WorkExpTo" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WorkExperience" nillable="true" type="tns:WorkExperience" />
+  <xs:complexType name="ArrayOfTeacher">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Teacher" nillable="true" type="tns:Teacher" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTeacher" nillable="true" type="tns:ArrayOfTeacher" />
+</xs:schema>

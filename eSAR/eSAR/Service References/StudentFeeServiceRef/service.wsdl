@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FeeService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/eSARService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IFeeService_UpdateFee_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFee" />
+  </wsdl:message>
+  <wsdl:message name="IFeeService_UpdateFee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFeeService_CreateFee_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateFee" />
+  </wsdl:message>
+  <wsdl:message name="IFeeService_CreateFee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateFeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFeeService_GetAllFees_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllFees" />
+  </wsdl:message>
+  <wsdl:message name="IFeeService_GetAllFees_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllFeesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IFeeService">
+    <wsdl:operation name="UpdateFee">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFeeService/UpdateFee" message="tns:IFeeService_UpdateFee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFeeService/UpdateFeeResponse" message="tns:IFeeService_UpdateFee_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateFee">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFeeService/CreateFee" message="tns:IFeeService_CreateFee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFeeService/CreateFeeResponse" message="tns:IFeeService_CreateFee_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllFees">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFeeService/GetAllFees" message="tns:IFeeService_GetAllFees_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFeeService/GetAllFeesResponse" message="tns:IFeeService_GetAllFees_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IFeeService" type="tns:IFeeService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UpdateFee">
+      <soap:operation soapAction="http://tempuri.org/IFeeService/UpdateFee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateFee">
+      <soap:operation soapAction="http://tempuri.org/IFeeService/CreateFee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllFees">
+      <soap:operation soapAction="http://tempuri.org/IFeeService/GetAllFees" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FeeService">
+    <wsdl:port name="BasicHttpBinding_IFeeService" binding="tns:BasicHttpBinding_IFeeService">
+      <soap:address location="http://localhost:8733/eSARService/FeeService/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
